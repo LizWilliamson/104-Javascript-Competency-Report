@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <title>Video Game</title>
+</head>
+<body>
+    <header class="header-site">
+        <div class="wrap">
+            <h1>Attack of the Zombies</h1>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="wrap-main">
+            <div class="square">
+                <img class="img-left" src="img/Zombie Left.jpeg" alt="left">
+                <br>
+                <div id=left></div>
+
+                <button class="btn" onclick="left.attack(right,selectItem());">Attack</button>
+
+
+            </div>
+
+            <div class="square">
+                    <img class="img-right" src="img/Zombie Right.jpeg" alt="right">
+
+                    <div id="right"></div>
+
+                    <button class="btn" onclick="right.attack(left,selectItem())">Attack</button>
+
+
+            </div>
+        </div>
+
+        <div class="console" id="console">
+
+
+        </div>
+        <div class="restart"><button class="btn" onclick="reset()">Restart</button></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
